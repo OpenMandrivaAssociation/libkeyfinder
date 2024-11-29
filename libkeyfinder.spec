@@ -41,10 +41,10 @@ libkeyfinder.
 
 %build
 %cmake
-%cmake_build
+%make_build
 
 %install
-%cmake_install
+%make_install -C build
 
 %files -n %{libname}
 %license LICENSE
