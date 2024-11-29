@@ -40,7 +40,7 @@ libkeyfinder.
 %autosetup -p1
 
 %build
-%cmake
+%cmake -DBUILD_TESTING=OFF
 %make_build
 
 %install
